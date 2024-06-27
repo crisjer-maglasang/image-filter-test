@@ -8,7 +8,7 @@ const LazyImage = ({ src, alt, title }) => {
 
   useEffect(() => {
     const observer = new IntersectionObserver(
-      (entries, observer) => {
+      (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             setHasIntersected(true);
